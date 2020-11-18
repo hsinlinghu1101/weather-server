@@ -1,0 +1,18 @@
+projects:
+  Weather-AppSync-App:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        region: us-west-1
+        apiId: uf7yxya6gnaitkfsip7tnkywxq
+        maxDepth: 2
+extensions:
+  amplify:
+    version: 3

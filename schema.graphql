@@ -1,0 +1,14 @@
+schema {
+ query: Query
+}
+
+type Query {
+    weatherByCity(name: String!): Weather
+    weatherByZip(zip: Float!): Weather
+  }
+  
+  type Weather {
+    timestamp: Int
+    location: String
+    temperature: Float
+  }
